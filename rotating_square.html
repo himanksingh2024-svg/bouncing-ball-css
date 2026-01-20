@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: lightgrey;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  background-color: blue;
+  position: relative;
+  animation: moveRotate 3s infinite linear;
+}
+
+@keyframes moveRotate {
+  0% {
+    left: 0;
+    transform: rotate(0deg);
+    background-color: blue;
+  }
+  50% {
+    left: 200px;
+    transform: rotate(180deg);
+    background-color: red;
+  }
+  100% {
+    left: 0;
+    transform: rotate(360deg);
+    background-color: blue;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="square"></div>
+
+</body>
+</html>
