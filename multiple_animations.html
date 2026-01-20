@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: lightgrey;
+}
+
+.item {
+  width: 60px;
+  height: 60px;
+  background-color: brown;
+  animation: moveY 2s infinite alternate, changeColor 1s infinite;
+}
+
+@keyframes moveY {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(150px);
+  }
+}
+
+@keyframes changeColor {
+  from {
+    background-color: brown;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="item"></div>
+
+</body>
+</html>
