@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: lightgrey;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 80px solid purple;
+  animation: rotateTriangle 3s infinite linear;
+}
+
+@keyframes rotateTriangle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="triangle"></div>
+
+</body>
+</html>
